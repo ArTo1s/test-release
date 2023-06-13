@@ -1,0 +1,27 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArTo1s/test-release.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "branches": [
+    "main" 
+  ],
+  "tagFormat": "${version}",
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer"
+    ],
+    [
+      "@semantic-release/release-notes-generator"
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "successComment": false
+      }
+    ]
+  ]
+}
